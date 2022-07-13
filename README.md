@@ -8,11 +8,13 @@ Open your CLI.</br>
 Check Node JS is installed:
 ```
 node --version
+// or
 node -v
 ```
 Check NPM is installed:
 ```
 npm --version
+// or
 npm -v
 ```
 To install Node JS download [here](https://nodejs.org/en/).</br>
