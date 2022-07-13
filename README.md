@@ -15,8 +15,8 @@ Check NPM is installed:
 npm --version
 npm -v
 ```
-To install Node JS download [here](https://nodejs.org/en/).
-Ton install NPM:
+To install Node JS download [here](https://nodejs.org/en/).</br>
+To install NPM:
 ```
 npm install
 ```
