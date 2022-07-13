@@ -1,2 +1,2 @@
-# webpack-content
-Setup template for an Express  and Webpack based app
+# Webpack Content
+Setup template for an Express and Webpack based app
