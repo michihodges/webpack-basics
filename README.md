@@ -1,5 +1,5 @@
 # Webpack Content
-Setup template for an Express and Webpack based app
+Setup template for an Express and Webpack based app.
 
 1. [Node and NPM](#node-and-npm)
 
