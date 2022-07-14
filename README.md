@@ -11,14 +11,16 @@ node --version
 // or
 node -v
 ```
+To install Node JS download [here](https://nodejs.org/en/).</br>
+
 Check NPM is installed:
 ```js
 npm --version
 // or
 npm -v
 ```
-To install Node JS download [here](https://nodejs.org/en/).</br>
-To install NPM:
+If npm isn't installed reinstall [Node](https://nodejs.org/en/), as both Node and NPM should be installed as a complete package.</br>
+If you intend to contribute to someone elses project with a present package.json file, you will need to install their project dependencies:
 ```js
 npm install
 ```
