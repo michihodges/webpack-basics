@@ -20,6 +20,10 @@ npm --version
 npm -v
 ```
 If npm isn't installed reinstall [Node](https://nodejs.org/en/), as both Node and NPM should be installed as a complete package.</br>
+If you intend to start a new project with npm:
+```js
+npm init
+```
 If you intend to contribute to someone elses project with a present package.json file, you will need to install their project dependencies:
 ```js
 npm install
