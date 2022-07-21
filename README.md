@@ -31,3 +31,11 @@ npm install
 ```
 
 ## 2 Express Server
+Install Express
+```js
+npm install express
+```
+Install CORS
+```js
+npm install cors
+```
