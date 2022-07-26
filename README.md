@@ -4,7 +4,7 @@ Setup template for an Express and Webpack based app.
 1. [Node and NPM](#node-and-npm)
 2. [Express Server](#express-server)
 
-## 1 Node and NPM
+## Node and NPM
 Open your CLI.</br>
 Check Node JS is installed:
 ```js
@@ -30,7 +30,7 @@ If you intend to contribute to someone elses project with a present package.json
 npm install
 ```
 
-## 2 Express Server
+## Express Server
 Install Express
 ```js
 npm install express
