@@ -36,7 +36,6 @@ npm install
 ```
 
 ### Express
-#### Install Dependencies
 Install Express:
 ```
 npm install express
