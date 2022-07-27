@@ -3,6 +3,7 @@ Setup template for an Express and Webpack based app.
 
 1. [Node and NPM](#node-and-npm)
 2. [Express Server](#express-server)
+3. [Architecture](#architecture)
 
 ## Node and NPM
 ### Check or Install Node Environment
@@ -38,4 +39,26 @@ npm install
 Install Express:
 ```bash
 npm install express
+```
+
+## Architecture
+The initial file and folder architecture should look like this:
+```bash
+|–– src
+|   |–– client
+|   |   |–– js
+|   |   |   |–– formHandler.js
+|   |   |   |–– nameChecker.js
+|   |   |–– styles
+|   |   |   |–– base.css
+|   |   |   |–– footer.css
+|   |   |   |–– form.css
+|   |   |   |–– header.css
+|   |   |   |–– resets.css
+|   |   |–– views
+|   |   |   |–– index.html
+|   |   |–– index.js
+|   |–– server
+|   |   |–– index.js
+|   |   |–– mockAPI.js
 ```
