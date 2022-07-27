@@ -39,7 +39,3 @@ Install Express:
 ```js
 npm install express
 ```
-Install Path:
-```js
-npm install path
-```
