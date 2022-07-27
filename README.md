@@ -1,8 +1,8 @@
 # Webpack Content
 Setup template for an Express and Webpack based app.
 
-1. [Node and NPM](#1-node-and-npm)
-2. [Express Server](#2-express-server)
+1. [Node and NPM](#node-and-npm)
+2. [Express Server](#express-server)
 
 ## Node and NPM
 ### Check or Install Node Environment
