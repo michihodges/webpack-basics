@@ -5,6 +5,7 @@ Setup template for an Express and Webpack based app.
 2. [2 Express Server](#2-express-server)
 
 ## 1 Node and NPM
+### Check or Install Node Environment
 Open your CLI.</br>
 Check Node and NPM is installed:
 ```js
@@ -33,6 +34,7 @@ npm install
 ```
 
 ## 2 Express Server
+### Install Dependencies
 Install Express:
 ```js
 npm install express
