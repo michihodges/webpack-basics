@@ -20,11 +20,11 @@ npm --version
 // or
 npm -v
 ```
-To install Node download [here](https://nodejs.org/en/).</br>
-Should you need to reinstall Node download [here](https://nodejs.org/en/).</br>
+To install Node, download [here](https://nodejs.org/en/).</br>
+Should you need to reinstall Node, download [here](https://nodejs.org/en/).</br>
 
 #### New Project
-If you intend to start a new project, you will need to initiate a NPM:
+If you intend to start a new project, you will need to initiate NPM:
 ```
 npm init
 ```
