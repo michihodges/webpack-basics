@@ -6,7 +6,7 @@ Walkthrough and template for an Express and Webpack based app.
 
 ## Node and Express
 ### Node and NPM (Node Package Manager)
-Node comes with NPM when installed.
+Node includes NPM when installed.
 #### Check or Install Node Environment
 Open your CLI to check Node and NPM is installed:
 ```
