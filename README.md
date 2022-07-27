@@ -1,43 +1,43 @@
 # Webpack Content
-Setup template for an Express and Webpack based app.
+Walkthrough and template for an Express and Webpack based app.
 
-1. [Node and NPM](#node-and-npm)
-2. [Express Server](#express-server)
-3. [Architecture](#architecture)
+1. [Node and Express](#node-and-express)
+2. [Architecture](#architecture)
 
-## Node and NPM
-### Check or Install Node Environment
-Open your CLI.</br>
-Check Node and NPM is installed:
-```bash
+## Node and Express
+### Node and NPM (Node Package Manager)
+Node comes with NPM when installed.
+#### Check or Install Node Environment
+Open your CLI to check Node and NPM is installed:
+```
 node --version
 // or
 node -v
 ```
-```bash
+```
 npm --version
 // or
 npm -v
 ```
 To install Node download [here](https://nodejs.org/en/).</br>
-To reinstall Node download [here](https://nodejs.org/en/).</br>
+Should you need to reinstall Node download [here](https://nodejs.org/en/).</br>
 
-### New Project
+#### New Project
 If you intend to start a new project, you will need to initiate a NPM:
-```bash
+```
 npm init
 ```
 
-### Contribute
+#### Contribute
 If you intend to contribute to a project with a present `package.json` file, you will need to install it's dependencies:
-```bash
+```
 npm install
 ```
 
-## Express Server
+### Express
 ### Install Dependencies
 Install Express:
-```bash
+```
 npm install express
 ```
 
