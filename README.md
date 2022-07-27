@@ -43,7 +43,7 @@ npm install express
 
 ## Architecture
 The initial file and folder architecture should look like this:
-```bash
+```
 |–– src
 |   |–– client
 |   |   |–– js
