@@ -28,7 +28,7 @@ npm init
 ```
 
 ### Contribute
-If you intend to contribute to a project with a present `package.json` file, you will need to install their project dependencies:
+If you intend to contribute to a project with a present `package.json` file, you will need to install it's dependencies:
 ```bash
 npm install
 ```
