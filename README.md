@@ -44,6 +44,7 @@ npm install express
 ## Architecture
 The initial file and folder architecture should look like this:
 ```
+|–– node_modules
 |–– src
 |   |–– client
 |   |   |–– js
@@ -61,8 +62,6 @@ The initial file and folder architecture should look like this:
 |   |–– server
 |   |   |–– index.js
 |   |   |–– mockAPI.js
-|–– .gitignore
-|–– README.md
 |–– package-lock.json
 |–– package.json
 ```
