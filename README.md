@@ -33,12 +33,16 @@ npm init
 If you intend to contribute to a project with a present `package.json` file, you will need to install it's dependencies:
 ```
 npm install
+// or
+npm i
 ```
 
 ### Express
 Install Express:
 ```
 npm install express
+// or
+npm i express
 ```
 
 ## Architecture
