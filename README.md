@@ -68,3 +68,235 @@ The initial file and folder architecture should look like this:
 `package.json`, `package-lock.json` and `node_modules` are automatically generated with the `npm init` and `npm install` commands. Any further dependencies installed will be saved there.
 
 ## Starter Code
+### src/client/js
+#### formHandler.js
+```js
+function handleSubmit(event) {
+    event.preventDefault()
+
+    // check what text was put into the form field
+    let formText = document.getElementById('name').value
+    checkForName(formText)
+
+    console.log("::: Form Submitted :::")
+    fetch('http://localhost:8080/test')
+    .then(res => res.json())
+    .then(function(res) {
+        document.getElementById('results').innerHTML = res.message
+    })
+}
+```
+
+#### nameChecker.js
+```js
+function checkForName(inputText) {
+    console.log("::: Running checkForName :::", inputText);
+    let names = [
+        "Picard",
+        "Janeway",
+        "Kirk",
+        "Archer",
+        "Georgiou"
+    ]
+
+    if(names.includes(inputText)) {
+        alert("Welcome, Captain!")
+    }
+}
+```
+
+### src/client/styles
+#### base.css
+```css
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 2;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+}
+```
+
+#### form.css
+```css
+form {
+    border: 1px solid #545454;
+    border-radius: 3px;
+    padding: 40px;
+}
+
+input {
+    padding: 5px 20px;
+    width: 100%;
+    line-height: 16px;
+    margin: 10px 0;
+}
+```
+
+#### header.css
+```css
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+```
+
+#### resets.css
+```css
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ul {
+    list-style-type: none;
+}
+```
+
+### src/client/views
+#### index.html
+```html
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Test</title>
+        <script type="text/javascript" src="/js/nameChecker.js"></script>
+        <script type="text/javascript" src="/js/formHandler.js"></script>
+        <link rel="stylesheet" href="/styles/resets.css">
+        <link rel="stylesheet" href="/styles/base.css">
+        <link rel="stylesheet" href="/styles/header.css">
+        <link rel="stylesheet" href="/styles/form.css">
+        <link rel="stylesheet" href="/styles/footer.css">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="">
+                Logo
+            </div>
+            <div class="">
+                navigation
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <form class="" onsubmit="return handleSubmit(event)">
+                    <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
+                    <input type="submit" name="" value="submit" onclick="return handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                </form>
+            </section>
+
+            <section>
+                <strong>Form Results:</strong>
+                <div id="results"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>This is a footer</p>
+        </footer>
+
+    </body>
+</html>
+```
+
+### src/server
+#### index.js
+```js
+// Require dependencies
+const path = require('path')
+const express = require('express')
+const mockAPIResponse = require('./mockAPI.js')
+
+// Start up an instance of app
+const app = express()
+
+// Initialize the main project folder
+app.use(express.static('src/client'))
+console.log(__dirname)
+
+// GET Route index.html
+app.get('/', function (req, res) {
+    res.sendFile('/client/views/index.html', { root: __dirname + '/..' })
+})
+
+// Setup server
+const port = 3000
+app.listen(port, ()=>{
+    console.log(`server running on localhost ${port}`)
+})
+
+// GET Route mockAPI
+app.get('/test', function (req, res) {
+    res.send(mockAPIResponse)
+})
+```
+
+#### mockAPI.js
+```js
+let json = {
+    'title': 'test json response',
+    'message': 'this is a message',
+    'time': 'now'
+}
+
+module.exports = json
+```
