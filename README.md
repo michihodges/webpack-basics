@@ -65,5 +65,6 @@ The initial file and folder architecture should look like this:
 |–– package-lock.json
 |–– package.json
 ```
+`package.json`, `package-lock.json` and `node_modules` are automatically generated with the `npm init` and `npm install` commands. Any further dependencies installed will be saved there.
 
 ## Starter Code
