@@ -4,6 +4,7 @@ Walkthrough and template for an Express and Webpack based app.
 1. [Node and Express](#node-and-express)
 2. [Architecture](#architecture)
 3. [Starter Code](#starter-code)
+4. [Webpack](#webpack)
 
 ## Node and Express
 ### Node and NPM (Node Package Manager)
@@ -304,3 +305,5 @@ let json = {
 
 module.exports = json
 ```
+
+## Webpack
