@@ -41,7 +41,7 @@ npm i
 ### Express
 Install Express:
 ```
-npm install express
+npm install --legacy-peer-deps express@4.17.1
 // or
 npm i express
 ```
