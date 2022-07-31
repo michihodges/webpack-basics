@@ -43,7 +43,7 @@ Install Express:
 ```
 npm install --legacy-peer-deps express@4.17.1
 // or
-npm i express
+npm i --legacy-peer-deps express@4.17.1
 ```
 
 ## Architecture
