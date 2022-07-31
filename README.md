@@ -307,3 +307,10 @@ module.exports = json
 ```
 
 ## Webpack
+### Installation
+Install Webpack, Webpack-cli and Webpack-dev-server.
+```
+npm i --legacy-peer-deps webpack@4.35.3
+npm i --legacy-peer-deps webpack-cli@3.3.5
+npm i --save-dev --legacy-peer-deps webpack-dev-server@3.11.2
+```
