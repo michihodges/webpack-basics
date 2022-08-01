@@ -303,9 +303,6 @@ let json = {
 module.exports = json
 ```
 #### package.json
-Installing dependencies will show up in this file.
-It can be initially configured during npm init in the CLI.
-It can also be tweaked, for instance, in the "scripts" object you can define CLI commands that help run a project, such as, the "start" command that lets you start the server in the root folder instead of in the src/server folder.
 ```js
 {
   "name": "webpack-content",
