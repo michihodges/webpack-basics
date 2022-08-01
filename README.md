@@ -305,6 +305,35 @@ let json = {
 
 module.exports = json
 ```
+### package.json
+Installing dependencies will show up in this file.
+It can be initially configured during npm init in the CLI.
+It can also be tweaked, for instance, in the "scripts" object you can define CLI commands that help run a project, such as, the "start" command that lets you start the server in the root folder instead of in the src/server folder.
+```js
+{
+  "name": "webpack-content",
+  "version": "1.0.0",
+  "description": "Walkthrough and template for an Express and Webpack based app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michihodges/webpack-content.git"
+  },
+  "author": "michihodges",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michihodges/webpack-content/issues"
+  },
+  "homepage": "https://github.com/michihodges/webpack-content#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
+```
 
 ## Webpack
 ### Installation
