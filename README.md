@@ -73,8 +73,9 @@ The initial file and folder architecture should look like this:
 `package.json`, `package-lock.json` and `node_modules` are automatically generated with the `npm init` and `npm install` commands. Any further dependencies installed will be saved there.
 
 ## Starter Code
-### src/client/js
-#### formHandler.js
+### Code Base
+#### src/client/js
+##### formHandler.js
 ```js
 function handleSubmit(event) {
     event.preventDefault()
@@ -92,7 +93,7 @@ function handleSubmit(event) {
 }
 ```
 
-#### nameChecker.js
+##### nameChecker.js
 ```js
 function checkForName(inputText) {
     console.log("::: Running checkForName :::", inputText);
@@ -110,8 +111,8 @@ function checkForName(inputText) {
 }
 ```
 
-### src/client/styles
-#### base.css
+#### src/client/styles
+##### base.css
 ```css
 body {
     display: flex;
@@ -128,8 +129,7 @@ section {
     margin: 50px auto;
 }
 ```
-
-#### form.css
+##### form.css
 ```css
 form {
     border: 1px solid #545454;
@@ -144,8 +144,7 @@ input {
     margin: 10px 0;
 }
 ```
-
-#### header.css
+##### header.css
 ```css
 header {
     display: flex;
@@ -153,8 +152,7 @@ header {
     padding: 10px 40px;
 }
 ```
-
-#### resets.css
+##### resets.css
 ```css
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -213,8 +211,8 @@ ul {
 }
 ```
 
-### src/client/views
-#### index.html
+#### src/client/views
+##### index.html
 ```html
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -263,8 +261,8 @@ ul {
 </html>
 ```
 
-### src/server
-#### index.js
+#### src/server
+##### index.js
 ```js
 // Require dependencies
 const path = require('path')
@@ -294,8 +292,7 @@ app.get('/test', function (req, res) {
     res.send(mockAPIResponse)
 })
 ```
-
-#### mockAPI.js
+##### mockAPI.js
 ```js
 let json = {
     'title': 'test json response',
@@ -305,7 +302,7 @@ let json = {
 
 module.exports = json
 ```
-### package.json
+#### package.json
 Installing dependencies will show up in this file.
 It can be initially configured during npm init in the CLI.
 It can also be tweaked, for instance, in the "scripts" object you can define CLI commands that help run a project, such as, the "start" command that lets you start the server in the root folder instead of in the src/server folder.
@@ -334,6 +331,9 @@ It can also be tweaked, for instance, in the "scripts" object you can define CLI
   }
 }
 ```
+
+### Test Server
+Test and start the server by running `npm start` in the CLI.
 
 ## Webpack
 ### Installation
