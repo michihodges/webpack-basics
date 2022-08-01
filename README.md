@@ -3,7 +3,7 @@ Walkthrough and template for an Express and Webpack based app.
 
 1. [Node and Express](#node-and-express)
 2. [Architecture](#architecture)
-3. [Starter Code](#starter-code)
+3. [Initial Setup](#initial-setup)
 4. [Webpack](#webpack)
 
 ## Node and Express
@@ -72,8 +72,8 @@ The initial file and folder architecture should look like this:
 ```
 `package.json`, `package-lock.json` and `node_modules` are automatically generated with the `npm init` and `npm install` commands. Any further dependencies installed will be saved there.
 
-## Starter Code
-### Code Base
+## Initial Setup
+### Starter Code
 #### src/client/js
 ##### formHandler.js
 ```js
