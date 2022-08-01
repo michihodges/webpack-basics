@@ -329,7 +329,7 @@ module.exports = json
 }
 ```
 
-### Test Server
+### Run Server
 Test and start the server by running `npm start` in the CLI.
 
 ## Webpack
@@ -362,4 +362,4 @@ module.exports = {
 }
 ```
 #### Run Webpack
-Test Webpack by running the build command `npm run build` in the CLI. Don't worry, there will be an error.
+Test Webpack by running the build command `npm run build` in the CLI. Don't worry - there will be an error ;)
