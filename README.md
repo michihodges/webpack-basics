@@ -408,7 +408,7 @@ Add the following code:
 { "presets": ["@babel/preset-env"] }
 ```
 #### webpack.config.js
-Add the following codeunder `entry`:
+Add the following code under `entry`:
 ```js
 module: {
         rules: [
@@ -419,4 +419,61 @@ module: {
             }
         ]
     }
+```
+#### index.html
+Replace:
+```html
+<script type="text/javascript" src="/js/nameChecker.js"></script>
+<script type="text/javascript" src="/js/formHandler.js"></script>
+```
+With:
+```html
+<script type="text/javascript" src="../../../dist/main.js"></script>
+```
+#### Import and Export
+##### src/client/index.js
+Import formHandler.js and nameChecker.js
+```js
+import { checkForName } from './js/nameChecker'
+import { handleSubmit } from './js/formHandler'
+
+console.log(checkForName);
+
+alert("I EXIST")
+```
+##### formHandler.js
+Export from formHandler.js
+```js
+export function handleSubmit(event) {
+    event.preventDefault()
+
+    // check what text was put into the form field
+    let formText = document.getElementById('name').value
+    checkForName(formText)
+
+    console.log("::: Form Submitted :::")
+    fetch('http://localhost:8080/test')
+    .then(res => res.json())
+    .then(function(res) {
+        document.getElementById('results').innerHTML = res.message
+    })
+}
+```
+##### nameChecker.js
+Export from nameChecker.js
+```js
+export function checkForName(inputText) {
+    console.log("::: Running checkForName :::", inputText);
+    let names = [
+        "Picard",
+        "Janeway",
+        "Kirk",
+        "Archer",
+        "Georgiou"
+    ]
+
+    if(names.includes(inputText)) {
+        alert("Welcome, Captain!")
+    }
+}
 ```
