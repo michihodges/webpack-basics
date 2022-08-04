@@ -7,7 +7,7 @@ Walkthrough and template for an Express and Webpack based app.
 4. [Webpack](#webpack)
 5. [Webpack Entry](#webpack-entry)
 6. [Babel and Loading JS Dependencies](#babel-and-loading-js-dependencies)
-7. [Plugins](#plugins)
+7. [Webpack Plugins](#webpack-plugins)
 
 ## Node and Express
 ### Node and NPM (Node Package Manager)
@@ -392,6 +392,7 @@ The result should be a dist folder containing a main.js file with the `alert('I 
 ```js
 !function(e){var t={};function r(n){if(t[n])return t[n].exports;var o=t[n]={i:n,l:!1,exports:{}};return e[n].call(o.exports,o,o.exports,r),o.l=!0,o.exports}r.m=e,r.c=t,r.d=function(e,t,n){r.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:n})},r.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},r.t=function(e,t){if(1&t&&(e=r(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var n=Object.create(null);if(r.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var o in e)r.d(n,o,function(t){return e[t]}.bind(null,o));return n},r.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return r.d(t,"a",t),t},r.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},r.p="",r(r.s=0)}([function(e,t){alert("I exist!")}]);
 ```
+Delete `dist` folder before after observing output and before running webpack again.
 
 ## Babel and Loading JS Dependencies
 ### Installation
@@ -479,7 +480,7 @@ export function checkForName(inputText) {
 }
 ```
 
-## Plugins
+## Webpack Plugins
 Install html webpack plugin:
 ```
 npm install -D --legacy-peer-deps html-webpack-plugin@3.2.0
@@ -517,3 +518,33 @@ To:
 app.use(express.static('dist'))
 ```
 Run the server.
+
+## Webpack Mode
+### webpack.config.js
+Create a copy of the `webpack.config.js` file and rename it `webpack.prod.js`.</br>
+Add `mode: production` at the top of `module.exports`.</br>
+Rename `webpack.config.js` to `webpack.dev.js` and add the following code at the top of `module.exports`:
+```js
+module.exports = {
+    mode: 'development',
+    devtool: 'source-map',
+}
+```
+### package.json
+Replace `"build": "webpack"` with:
+```js
+"scripts": {
+    "build-prod": "webpack --config webpack.prod.js",
+    "build-dev": "webpack --config webpack.dev.js --open"
+},
+```
+### Run Modes
+Run replaced scripts respectively and observe differences generated in the `dist` folder:
+```
+npm run build-prod
+```
+```
+npm run build-dev
+```
+The result should be that development mode should additionally have a `main.js.map` file and code in the `main.js` file should be 'prettified', that is, formatted so that someone can read it more easily.</br>
+Delete `dist` folder before after observing output and before running modes again.
