@@ -8,6 +8,7 @@ Walkthrough and template for an Express and Webpack based app.
 5. [Webpack Entry](#webpack-entry)
 6. [Babel and Loading JS Dependencies](#babel-and-loading-js-dependencies)
 7. [Webpack Plugins](#webpack-plugins)
+8. [Webpack Mode](#webpack-mode)
 
 ## Node and Express
 ### Node and NPM (Node Package Manager)
