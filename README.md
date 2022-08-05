@@ -342,7 +342,6 @@ Install Webpack, Webpack-cli and Webpack-dev-server.
 ```
 npm i --legacy-peer-deps webpack@4.35.3
 npm i --legacy-peer-deps webpack-cli@3.3.5
-npm i --save-dev --legacy-peer-deps webpack-dev-server@3.11.2
 ```
 
 ### Configuration
@@ -549,3 +548,10 @@ npm run build-dev
 ```
 The result should be that development mode should additionally have a `main.js.map` file and code in the `main.js` file should be 'prettified', that is, formatted so that someone can read it more easily.</br>
 Delete `dist` folder before after observing output and before running modes again.
+
+## Convenience
+### Webpack Dev Server
+Install Webpack Dev Server:
+npm i -D --legacy-peer-deps webpack-dev-server@3.11.2
+
+### Clean Webpack Plugin
