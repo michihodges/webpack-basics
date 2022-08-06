@@ -509,7 +509,8 @@ app.get('/', function (req, res) {
     res.sendFile('dist/index.html')
 })
 ```
-Update your server file to look for asset files in the dist instead of client . Change:
+Update your server file to look for asset files in the dist instead of client.</br>
+Change:
 ```js
 app.use(express.static('src/client'))
 ```
@@ -533,10 +534,8 @@ module.exports = {
 ### package.json
 Replace `"build": "webpack"` with:
 ```js
-"scripts": {
-    "build-prod": "webpack --config webpack.prod.js",
-    "build-dev": "webpack --config webpack.dev.js --open"
-},
+"build-prod": "webpack --config webpack.prod.js",
+"build-dev": "webpack --config webpack.dev.js --open"
 ```
 ### Run Modes
 Run replaced scripts respectively and observe differences generated in the `dist` folder:
@@ -551,7 +550,9 @@ Delete `dist` folder before after observing output and before running modes agai
 
 ## Convenience
 ### Webpack Dev Server
+Webpack Dev Server hot reloads the page and automatically re-builds the app when in development mode.</br>
 Install Webpack Dev Server:
+```
 npm i -D --legacy-peer-deps webpack-dev-server@3.11.2
-
+```
 ### Clean Webpack Plugin
