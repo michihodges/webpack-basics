@@ -562,3 +562,7 @@ Install Clean Webpack Plugin:
 ```
 npm i -D --legacy-peer-deps clean-webpack-plugin@3.0.0
 ```
+Alternatively, you can go really low tech by simply editing the build script and blanket delete the `dist` folder every time:
+```js
+rm -rf dist && webpack-dev-server  --config webpack.dev.js --open
+```
