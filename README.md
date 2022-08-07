@@ -9,6 +9,7 @@ Walkthrough and template for an Express and Webpack based app.
 6. [Babel and Loading JS Dependencies](#babel-and-loading-js-dependencies)
 7. [Webpack Plugins](#webpack-plugins)
 8. [Webpack Mode](#webpack-mode)
+9. [Convenience](#convenience)
 
 ## Node and Express
 ### Node and NPM (Node Package Manager)
@@ -556,3 +557,8 @@ Install Webpack Dev Server:
 npm i -D --legacy-peer-deps webpack-dev-server@3.11.2
 ```
 ### Clean Webpack Plugin
+Notice that we have deleted the `dist` folder manually each time after running the `npm run build` or `npm run build-dev` command. With the Clean Webpack Plugin, it efficiently only rebuilds the files where changes have been made.
+Install Clean Webpack Plugin:
+```
+npm i -D --legacy-peer-deps clean-webpack-plugin@3.0.0
+```
