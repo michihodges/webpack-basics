@@ -6,7 +6,7 @@ Walkthrough and template for an Express and Webpack based app.
 3. [Initial Setup](#initial-setup)
 4. [Webpack](#webpack)
 5. [Webpack Entry](#webpack-entry)
-6. [Babel and Loading JS Dependencies](#babel-and-loading-js-dependencies)
+6. [Webpack Loaders](#webpack-loaders)
 7. [Webpack Plugins](#webpack-plugins)
 8. [Webpack Mode](#webpack-mode)
 9. [Convenience](#convenience)
@@ -395,12 +395,12 @@ The result should be a dist folder containing a main.js file with the `alert('I 
 ```
 Delete `dist` folder before after observing output and before running webpack again.
 
-## Babel and Loading JS Dependencies
-### Installation
+## Webpack Loaders
+### Install Babel
 ```
 npm i -D --legacy-peer-deps @babel/core@^7.13.15 @babel/preset-env@^7.13.15 babel-loader@^8.2.2
 ```
-### Configuration
+### Configure Babel
 #### .babelrc
 Create a .babelrc file in the project root:
 ```
