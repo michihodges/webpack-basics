@@ -1,4 +1,4 @@
-export function handleSubmit(event) {
+function handleSubmit(event) {
     event.preventDefault()
 
     // check what text was put into the form field
@@ -12,3 +12,5 @@ export function handleSubmit(event) {
         document.getElementById('results').innerHTML = res.message
     })
 }
+
+export { handleSubmit }
