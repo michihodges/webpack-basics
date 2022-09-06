@@ -1,5 +1,5 @@
 # Webpack Content
-Walkthrough and template for an Express and Webpack based app.
+ A template for setting up Webpack for an Express based app.
 
 1. [Node and Express](#node-and-express)
 2. [Architecture](#architecture)
