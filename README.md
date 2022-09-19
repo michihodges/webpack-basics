@@ -6,10 +6,45 @@ Node.js is essential for setting up Webpack and various packages that make Webpa
 
 ## Confirm Installation
 ```js
-node -v // verifies node version
+node -v
 ```
 
-## Install NVM (Node Version Manager)
+## NVM (Node Version Manager)
+### Create a .zshrc File
+```js
+touch .zshrc
+```
+
+### Install NVM
+```js
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+```
+
+### Confirm Installation
+```js
+command -v nvm
+```
+
+### Automate NVM
+```js
+source ~/.nvm/nvm.sh
+```
+
+### Install Node.js Version 14
+```js
+nvm i node 14
+```
+
+### Replace Default Node.js Version
+```js
+nvm alias default 14
+nvm use 14
+```
+
+### Confirm Node.js Version
+```js
+node -v
+```
 
 
 
