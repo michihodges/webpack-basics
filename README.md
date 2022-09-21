@@ -1,33 +1,16 @@
 # Webpack Content
 A template for setting up Webpack for an Express based app.
 
-1. [Node and Express](#node-and-express)
-2. [Architecture](#architecture)
-3. [Initial Setup](#initial-setup)
-4. [Webpack](#webpack)
-5. [Webpack Entry](#webpack-entry)
-6. [Webpack Loaders](#webpack-loaders)
-7. [Webpack Plugins](#webpack-plugins)
-8. [Webpack Mode](#webpack-mode)
-9. [Convenience](#convenience)
+1. [Architecture](#architecture)
+2. [Initial Setup](#initial-setup)
+3. [Webpack](#webpack)
+4. [Webpack Entry](#webpack-entry)
+5. [Webpack Loaders](#webpack-loaders)
+6. [Webpack Plugins](#webpack-plugins)
+7. [Webpack Mode](#webpack-mode)
+8. [Convenience](#convenience)
 
 ## Node and Express
-### Node and NPM (Node Package Manager)
-Node includes NPM when installed.
-#### Check or Install Node Environment
-Open your CLI to check Node and NPM is installed:
-```
-node --version
-// or
-node -v
-```
-```
-npm --version
-// or
-npm -v
-```
-To install Node, download [here](https://nodejs.org/en/).</br>
-Should you need to reinstall Node, download [here](https://nodejs.org/en/).</br>
 
 #### New Project
 If you intend to start a new project, you will need to initiate NPM:
