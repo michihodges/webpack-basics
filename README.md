@@ -47,48 +47,16 @@ node -v
 ```
 
 ## NPM (Node Package Manager)
-To start using node and adding packages, you need to use npm, which was already installed with node.
-
-
-Therefore, you will either need to check your version or install it:
+### Starting a New Project
 ```js
-node -v // checks version
-node install 14 // installs 
+npm init // creates a package.json file
 ```
 
-1. [Node and Express](#node-and-express)
-
-## Node and Express
-### Node and NPM (Node Package Manager)
-Node includes NPM when installed.
-#### Check or Install Node Environment
-Open your CLI to check Node and NPM is installed:
-```
-node --version
-// or
-node -v
-```
-```
-npm --version
-// or
-npm -v
-```
-To install Node, download [here](https://nodejs.org/en/).</br>
-Should you need to reinstall Node, download [here](https://nodejs.org/en/).</br>
-
-#### New Project
-If you intend to start a new project, you will need to initiate NPM:
-```
-npm init
+### Contributing to a Project
+```js
+npm install // installs everything from the package.json file
 ```
 
-#### Contribute
-If you intend to contribute to a project with a present `package.json` file, you will need to install it's dependencies:
-```
-npm install
-// or
-npm i
-```
 
 ### Express
 Install Express:
