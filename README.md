@@ -56,12 +56,3 @@ npm init // creates a package.json file
 ```js
 npm install // installs everything from the package.json file
 ```
-
-
-### Express
-Install Express:
-```
-npm install --legacy-peer-deps express@4.17.1
-// or
-npm i --legacy-peer-deps express@4.17.1
-```
