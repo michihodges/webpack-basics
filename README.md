@@ -1,4 +1,4 @@
-# Webpack Content
+# Webpack Basics
 A template for setting up Webpack for an Express based app.
 
 1. [Architecture](#architecture)
