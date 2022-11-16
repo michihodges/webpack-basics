@@ -10,22 +10,6 @@ A template for setting up Webpack for an Express based app.
 7. [Webpack Mode](#webpack-mode)
 8. [Convenience](#convenience)
 
-## Node and Express
-
-#### New Project
-If you intend to start a new project, you will need to initiate NPM:
-```
-npm init
-```
-
-#### Contribute
-If you intend to contribute to a project with a present `package.json` file, you will need to install it's dependencies:
-```
-npm install
-// or
-npm i
-```
-
 ### Express
 Install Express:
 ```
