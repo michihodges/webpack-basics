@@ -1,7 +1,7 @@
 # Webpack Basics
 A template for setting up Webpack for an Express based app.
 
-1. [Test](https://github.com/michihodges/webpack-basics/tree/1-node)
+1. [1-node](https://github.com/michihodges/webpack-basics/tree/1-node)
 
 2. [Initial Setup](#initial-setup)
 3. [Webpack](#webpack)
