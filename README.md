@@ -4,13 +4,13 @@ A template for setting up Webpack for an Express based app.
 1. [01-node](https://github.com/michihodges/webpack-basics/tree/01-node)
 2. [02-express](https://github.com/michihodges/webpack-basics/tree/02-express)
 
-2. [Initial Setup](#initial-setup)
-3. [Webpack](#webpack)
-4. [Webpack Entry](#webpack-entry)
-5. [Webpack Loaders](#webpack-loaders)
-6. [Webpack Plugins](#webpack-plugins)
-7. [Webpack Mode](#webpack-mode)
-8. [Convenience](#convenience)
+3. [Initial Setup](#initial-setup)
+4. [Webpack](#webpack)
+5. [Webpack Entry](#webpack-entry)
+6. [Webpack Loaders](#webpack-loaders)
+7. [Webpack Plugins](#webpack-plugins)
+8. [Webpack Mode](#webpack-mode)
+9. [Convenience](#convenience)
 
 ### Express
 Install Express:
