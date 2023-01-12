@@ -56,3 +56,6 @@ npm init // creates a package.json file
 ```js
 npm install // installs everything from the package.json file
 ```
+
+## Return to Main
+[Return to Main](https://github.com/michihodges/webpack-basics)
