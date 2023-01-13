@@ -11,14 +11,6 @@ A template for setting up Webpack for an Express based app.
 8. [Webpack Mode](#webpack-mode)
 9. [Convenience](#convenience)
 
-### Express
-Install Express:
-```
-npm install --legacy-peer-deps express@4.17.1
-// or
-npm i --legacy-peer-deps express@4.17.1
-```
-
 ## Webpack
 ### Installation
 Install Webpack, Webpack-cli and Webpack-dev-server.
