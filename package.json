@@ -1,0 +1,25 @@
+{
+  "name": "webpack-basics",
+  "version": "1.0.0",
+  "description": "Install the express, cors and body-parser packages: ``` npm i --legacy-peer-deps express@4.17.1 npm i --legacy-peer-deps cors@2.8.5 npm i --legacy-peer-deps body-parser@1.19.0 ```",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michihodges/webpack-content.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michihodges/webpack-content/issues"
+  },
+  "homepage": "https://github.com/michihodges/webpack-content#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
