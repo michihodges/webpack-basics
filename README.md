@@ -26,9 +26,9 @@ const webpack = require("webpack")
 module.exports = {
 }
 ```
-### Run Webpack
-Test Webpack by running the build command in the CLI: 
+## Run Webpack
+Run the build command in the CLI: 
 ```
 npm run build
 ```
-Don't worry - there will be an error ;)
+Don't worry - there will be an error, because the config is still empty ;)
