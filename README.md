@@ -31,4 +31,4 @@ Run the build command in the CLI:
 ```
 npm run build
 ```
-Don't worry - there will be an error, because the config is still empty ;)
+Don't worry - there will be an error, because the config file is still empty ;)
