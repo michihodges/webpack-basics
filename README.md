@@ -9,7 +9,7 @@ npm i --legacy-peer-deps --save-dev webpack-dev-server@3.11.2
 ```
 
 ## Configuration
-Add the `build` command to package.json:
+Add the build command to package.json:
 ```js
 "scripts": {
     "build": "webpack"
