@@ -3,7 +3,7 @@ A walkthrough for setting up Webpack for an Express based app.</br></br>
 
 Checkout [01-node](https://github.com/michihodges/webpack-basics/tree/01-node) if you need to install and setup Node.js.</br>
 Checkout [02-express](https://github.com/michihodges/webpack-basics/tree/02-express) if you need to install and setup Express.</br>
-Checkout [03-webpack](https://github.com/michihodges/webpack-basics/tree/03-webpack) if you need to install and setup Webpack.
+Checkout [03-webpack](https://github.com/michihodges/webpack-basics/tree/03-webpack) if you need to install and setup Webpack.</br>
 Checkout [04-webpack-entry](https://github.com/michihodges/webpack-basics/tree/04-webpack-entry) if you need to setup and test a Webpack entry.
 
 ## Webpack Entry
