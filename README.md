@@ -32,3 +32,6 @@ Run the build command in the CLI:
 npm run build
 ```
 Don't worry - there will be an error, because the config file is still empty ;)
+
+## Return to Main
+[Return to Main](https://github.com/michihodges/webpack-basics)
