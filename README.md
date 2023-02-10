@@ -5,47 +5,7 @@ Checkout [01-node](https://github.com/michihodges/webpack-basics/tree/01-node) i
 Checkout [02-express](https://github.com/michihodges/webpack-basics/tree/02-express) if you need to install and setup Express.</br>
 Checkout [03-webpack](https://github.com/michihodges/webpack-basics/tree/03-webpack) if you need to install and setup Webpack.</br>
 Checkout [04-webpack-entry](https://github.com/michihodges/webpack-basics/tree/04-webpack-entry) if you need to setup and test your Webpack entry.</br>
-Checkout [05-webpack-loaders](https://github.com/michihodges/webpack-basics/tree/05-webpack-loaders) if you need to setup Webpack loaders like Babel.
-
-## Webpack Plugins
-Install html webpack plugin:
-```
-npm install -D --legacy-peer-deps html-webpack-plugin@3.2.0
-```
-Require the plugin with the other dependencies required at the top of the webpack config:
-```
-const htmlWebpackPlugin = require("html-webpack-plugin")
-```
-Add a `plugins` list under the `modules` object to the webpack config and instantiate the plugin:
-```js
-plugins: [
-    new htmlWebpackPlugin({
-        template: "./src/client/views/index.html",
-        filename: "./index.html"
-    })
-]
-```
-Run webpack and observe the new dist folder output:
-```
-npm run build
-```
-The result should be a dist folder with an index.html and main.js file. The index.html file should have the main.js file dynamically added at the end.</br>
-Update your server file. Change the home route to use the index file from dist:
-```js
-app.get('/', function (req, res) {
-    res.sendFile('dist/index.html')
-})
-```
-Update your server file to look for asset files in the dist instead of client.</br>
-Change:
-```js
-app.use(express.static('src/client'))
-```
-To:
-```js
-app.use(express.static('dist'))
-```
-Run the server.
+Checkout [05-webpack-loaders](https://github.com/michihodges/webpack-basics/tree/05-webpack-loaders) if you need to setup Webpack loaders like Babel.</br>
 
 ## Webpack Mode
 ### webpack.config.js
