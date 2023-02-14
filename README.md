@@ -7,6 +7,7 @@ Checkout [03-webpack](https://github.com/michihodges/webpack-basics/tree/03-webp
 Checkout [04-webpack-entry](https://github.com/michihodges/webpack-basics/tree/04-webpack-entry) if you need to setup and test your Webpack entry.</br>
 Checkout [05-webpack-loaders](https://github.com/michihodges/webpack-basics/tree/05-webpack-loaders) if you need to setup Webpack loaders like Babel.</br>
 Checkout [06-webpack-plugins](https://github.com/michihodges/webpack-basics/tree/06-webpack-plugins) if you need to setup Webpack plugins like HTML Webpack Plugin.</br>
+Checkout [07-webpack-mode](https://github.com/michihodges/webpack-basics/tree/07-webpack-mode) if you need to setup development or production modes with Webpack.</br>
 
 ## Convenience
 ### Webpack Dev Server
