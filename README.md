@@ -8,21 +8,3 @@ Checkout [04-webpack-entry](https://github.com/michihodges/webpack-basics/tree/0
 Checkout [05-webpack-loaders](https://github.com/michihodges/webpack-basics/tree/05-webpack-loaders) if you need to setup Webpack loaders like Babel.</br>
 Checkout [06-webpack-plugins](https://github.com/michihodges/webpack-basics/tree/06-webpack-plugins) if you need to setup Webpack plugins like HTML Webpack Plugin.</br>
 Checkout [07-webpack-mode](https://github.com/michihodges/webpack-basics/tree/07-webpack-mode) if you need to setup development or production modes with Webpack.</br>
-
-## Convenience
-### Webpack Dev Server
-Webpack Dev Server hot reloads the page and automatically re-builds the app when in development mode.</br>
-Install Webpack Dev Server:
-```
-npm i -D --legacy-peer-deps webpack-dev-server@3.11.2
-```
-### Clean Webpack Plugin
-Notice that we have deleted the `dist` folder manually each time after running the `npm run build` or `npm run build-dev` command. With the Clean Webpack Plugin, it efficiently only rebuilds the files where changes have been made.
-Install Clean Webpack Plugin:
-```
-npm i -D --legacy-peer-deps clean-webpack-plugin@3.0.0
-```
-Alternatively, you can go really low tech by simply editing the build script and blanket delete the `dist` folder every time:
-```js
-rm -rf dist && webpack-dev-server  --config webpack.dev.js --open
-```
