@@ -1,27 +1,17 @@
-# Webpack Mode
-### webpack.config.js
-Create a copy of the `webpack.config.js` file and rename it `webpack.prod.js`.</br>
-Add `mode: production` at the top of `module.exports`.</br>
-Rename `webpack.config.js` to `webpack.dev.js` and add the following code at the top of `module.exports`:
+# Convenience
+## Webpack Dev Server
+Webpack Dev Server hot reloads the page and automatically re-builds the app when in development mode.</br>
+Install Webpack Dev Server:
+```
+npm i -D --legacy-peer-deps webpack-dev-server@3.11.2
+```
+## Clean Webpack Plugin
+Notice that we have deleted the `dist` folder manually each time after running the `npm run build` or `npm run build-dev` command. With the Clean Webpack Plugin, it efficiently only rebuilds the files where changes have been made.
+Install Clean Webpack Plugin:
+```
+npm i -D --legacy-peer-deps clean-webpack-plugin@3.0.0
+```
+Alternatively, you can go really low tech by simply editing the build script and blanket delete the `dist` folder every time:
 ```js
-module.exports = {
-    mode: 'development',
-    devtool: 'source-map',
-}
+rm -rf dist && webpack-dev-server  --config webpack.dev.js --open
 ```
-### package.json
-Replace `"build": "webpack"` with:
-```js
-"build-prod": "webpack --config webpack.prod.js",
-"build-dev": "webpack --config webpack.dev.js --open"
-```
-### Run Modes
-Run replaced scripts respectively and observe differences generated in the `dist` folder:
-```
-npm run build-prod
-```
-```
-npm run build-dev
-```
-The result should be that development mode should additionally have a `main.js.map` file and code in the `main.js` file should be 'prettified', that is, formatted so that someone can read it more easily.</br>
-Delete `dist` folder before after observing output and before running modes again.
