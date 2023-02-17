@@ -8,4 +8,4 @@ Checkout [04-webpack-entry](https://github.com/michihodges/webpack-basics/tree/0
 Checkout [05-webpack-loaders](https://github.com/michihodges/webpack-basics/tree/05-webpack-loaders) if you need to setup Webpack loaders like Babel.</br>
 Checkout [06-webpack-plugins](https://github.com/michihodges/webpack-basics/tree/06-webpack-plugins) if you need to setup Webpack plugins like HTML Webpack Plugin.</br>
 Checkout [07-webpack-mode](https://github.com/michihodges/webpack-basics/tree/07-webpack-mode) if you need to setup development or production modes with Webpack.</br>
-Checkout [08-webpack-convenience](https://github.com/michihodges/webpack-basics/tree/08-webpack-convenience) for further packages that help and ease your project work flow.
+Checkout [08-webpack-convenience](https://github.com/michihodges/webpack-basics/tree/08-webpack-convenience) for further packages that can help and ease your project work flow.
