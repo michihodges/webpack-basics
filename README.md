@@ -57,5 +57,17 @@ npm init // creates a package.json file
 npm install // installs everything from the package.json file
 ```
 
+## Errors
+If `npm install` throws an error, try clearing the cache and a fresh re-install with:
+```
+npm cache clean 
+[sudo] npm install -g npm 
+npm install
+```
+Should any vulnerabilities need fixing run:
+```
+npm audit fix
+```
+
 ## Return to Main
 [Return to Main](https://github.com/michihodges/webpack-basics)
