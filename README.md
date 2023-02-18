@@ -25,3 +25,6 @@ npm run build-dev
 ```
 The result should be that development mode should additionally have a `main.js.map` file and code in the `main.js` file should be 'prettified', that is, formatted so that someone can read it more easily.</br>
 Delete `dist` folder before after observing output and before running modes again.
+
+## Return to Main
+[Return to Main](https://github.com/michihodges/webpack-basics)
