@@ -1,7 +1,7 @@
 # Node.js
 Node.js is essential for setting up Webpack and various packages that make Webpack so useful. In this case, node version 14 is especially important, because each node package that will be installed must be compatible with another and the node version needs to be able to manage them. There may be better ways to go about this, nonetheless, this is what worked for me:</br></br>
 
-Install node.js
+Install node.js:</br>
 [Download Node.js](https://nodejs.org/en/download/)
 
 ## Confirm Installation
