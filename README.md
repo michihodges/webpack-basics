@@ -1,6 +1,8 @@
 # Node.js
 Node.js is essential for setting up Webpack and various packages that make Webpack so useful. In this case, node version 14 is especially important, because each node package that will be installed must be compatible with another and the node version needs to be able to manage them.
 
+Node.js is essential when setting up Webpack, because Webpack is a package based on Node.js and without Node.js you would not even be able to install Webpack. What I have discovered about Node.js, Webpack as well as other Node dependent packages, is that their versions are vital to a project's success and MUST be compatible with each other. I would therefore, from my experience, suggest to install Node.js version 14. This can be done in two ways. If you do not have Node.js installed yet then install version 14. If you have the latest version installed then install NVM (Node Version Manager), install version 14 and if you want to set it to your default version.
+
 ## Install Node.js
 [Download Node.js](https://nodejs.org/en/download/)
 
