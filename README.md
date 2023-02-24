@@ -41,7 +41,7 @@ const port = 8000;
 const server = app.listen(port, ()=>{console.log(`server running on localhost ${port}`)});
 ```
 
-## DONE! &nbsp; :raised_hands:
+## :raised_hands: &nbsp; DONE!
 
 ## Return to Main
 [Return to Main](https://github.com/michihodges/webpack-basics)
