@@ -1,5 +1,8 @@
 # Express
-Install the express, cors and body-parser packages:
+Express.js (Express) is one of the most popular Node frameworks for building web applications quickly and easily. The CORS and Body-Parser packages will also need to be installed for Express to work properly. CORS allows for communication across the web, which is important when getting and posting data from an API (Application Programming Interface). Body-Parser acts as Middleware, allowing data to be parsed and is passed through routes onto the server. The following steps will demonstrate how easily an Express server can be set up locally:
+
+## Install Packages
+Install Express, CORS and Body-Parser:
 ```
 npm i --legacy-peer-deps express@4.17.1
 npm i --legacy-peer-deps cors@2.8.5
@@ -20,12 +23,12 @@ projectData = {};
 const express = require('express');
 const app = express();
 
-// Body parser
+// Body-Parser
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// Cors for cross origin allowance
+// CORS for cross origin allowance
 const cors = require('cors');
 app.use(cors());
 
