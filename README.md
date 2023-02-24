@@ -25,7 +25,7 @@ nvm i 14
 ```
 
 ### Set Default (Optional)
-If you have other Node versions installed you can reconfigure the default version to 14 if you want:
+If you have other Node versions installed you can reconfigure the default version to 14 if you wish:
 ```js
 nvm alias default 14
 nvm use 14
