@@ -36,7 +36,7 @@ node -v
 ```
 
 ## NPM
-NPM will automatically install when installing Node.</br>
+NPM is automatically installed when installing Node.</br>
 ### Starting a New Project
 ```js
 npm init // creates a package.json file
