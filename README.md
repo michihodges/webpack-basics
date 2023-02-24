@@ -9,6 +9,7 @@ npm i --legacy-peer-deps cors@2.8.5
 npm i --legacy-peer-deps body-parser@1.19.0
 ```
 
+## Setup Express Server
 Create a `server.js` file:
 ```
 touch server.js
