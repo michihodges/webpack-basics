@@ -1,7 +1,7 @@
 # Node.js
-Node.js (Node) is essential when setting up Webpack, because Webpack is a package based on Node and without Node you would not even be able to install Webpack. What I have discovered about Node, Webpack as well as other Node dependent packages, is that their versions are vital to a project's success and MUST be compatible with each other. Bellow is a set of instructions how to best install Node version 14 using NVM (Node Version Manager), how to start or contribute to a Node based project using Node Package Manager (NPM) and what to do should you run into any installation errors:
+Node.js (Node) is essential when setting up Webpack, because Webpack is a package based on Node and without Node you would not even be able to install Webpack. What I have discovered about Node, Webpack as well as other Node dependent packages, is that their versions are vital to a project's success and MUST be compatible with each other. Bellow is a set of instructions how to best install Node version 14 using NVM (Node Version Manager), how to start or contribute to a Node based project using NPM (Node Package Manager) and what to do should you run into any installation errors:
 
-## Install NVM
+## NVM
 Create a .zshrc file:
 ```js
 touch .zshrc
@@ -19,12 +19,12 @@ Automate NVM:
 source ~/.nvm/nvm.sh
 ```
 
-## Install Node Version 14
+### Install Node Version 14
 ```js
 nvm i 14
 ```
 
-## Set Default (Optional)
+### Set Default (Optional)
 If you have other Node versions installed you can reconfigure the default version to 14 if you want:
 ```js
 nvm alias default 14
