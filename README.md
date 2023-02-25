@@ -1,4 +1,6 @@
 # Webpack
+Webpack is one of the most popular build tools that bundles modules into fewer files and thereby optimises file size. File size is important, because the smaller they are the faster your web app is and the better google will rank it. 
+
 ## Installation
 
 Install Webpack, Webpack-cli and Webpack-dev-server.
