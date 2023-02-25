@@ -45,6 +45,10 @@ const server = app.listen(port, ()=>{console.log(`server running on localhost ${
 ```
 node server.js
 ```
+The console should print:
+```
+server running on localhost 8000
+```
 
 ## DONE! &nbsp; :raised_hands:
 
