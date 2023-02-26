@@ -1,5 +1,5 @@
 # Webpack
-Webpack is one of the most popular build tools that bundles modules into fewer files and thereby optimises file size. File size is important, because the smaller they are the faster your web app is and the better google will rank it. 
+Webpack is one of the most popular build tools that bundles modules into fewer files and thereby optimising file size. File size is important, because the smaller they are the faster your web app is and essentially the better google will rank it. 
 
 ## Initial Setup
 
@@ -13,12 +13,15 @@ npm i --legacy-peer-deps --save-dev webpack-dev-server@3.11.2
 ```
 
 ## Configuration
+### package.json
 Add the build command to package.json:
 ```js
 "scripts": {
     "build": "webpack"
 }
 ```
+
+### webpack.config.js
 Create a webpack.config.js file in the project root:
 ```
 touch webpack.config.js
