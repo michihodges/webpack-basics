@@ -56,5 +56,4 @@ server running on localhost 8000
 ## CONGRATS! &nbsp; :raised_hands:
 Your server is now up and running!
 
-## Return to Main
-[Return to Main](https://github.com/michihodges/webpack-basics)
+## [Return to Main](https://github.com/michihodges/webpack-basics)
