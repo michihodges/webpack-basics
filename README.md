@@ -1,6 +1,8 @@
 # Webpack
 Webpack is one of the most popular build tools that bundles modules into fewer files and thereby optimises file size. File size is important, because the smaller they are the faster your web app is and the better google will rank it. 
 
+## Initial Setup
+
 ## Installation
 
 Install Webpack, Webpack-cli and Webpack-dev-server.
@@ -35,5 +37,4 @@ npm run build
 ```
 Don't worry - there will be an error, because the config file is still empty ;)
 
-## Return to Main
-[Return to Main](https://github.com/michihodges/webpack-basics)
+## [Return to Main](https://github.com/michihodges/webpack-basics)
