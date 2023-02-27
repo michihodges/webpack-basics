@@ -5,7 +5,7 @@ Webpack is one of the most popular build tools that bundles various modules into
 As with the previous branch 02-express, the file structure can be found at the top of this GitHub repository with an example project to work with. It is important to remember that server based files including config file is in the project root and not in the project folder which in this case is anything inside the `src` folder.
 
 ## Installation
-Install Webpack, Webpack-cli and Webpack-dev-server.
+Install Webpack, Webpack-cli and Webpack-dev-server:
 ```
 npm i --legacy-peer-deps webpack@4.35.3
 npm i --legacy-peer-deps webpack-cli@3.3.5
