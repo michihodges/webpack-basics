@@ -1,15 +1,21 @@
 # Webpack Entry
-Add entry in webpack.config.js:
+Before Webpack can map app assets including dependencies it needs somewhere to start. The default entry point is `./src/index.js`, however, due to Express already being set up with a slightly different file structure and the file not existing the entry point will need to be configured in the config file.
+
+## Configure Entry Point
+Add entry point to `webpack.config.js`:
 ```js
 module.exports = {
-    entry: './src/client/index.js'
+    entry: './src/client/index.js' // Notice the entry point is in ./src/CLIENT/index.js and not ./src/index.js
 }
 ```
-Add test content in src/client/index.js:
+
+## Test Entry Point
+Add test content to `src/client/index.js`:
 ```js
-alert('I exist!')
+alert('I exist!') // Alert is a nice visual alternative to console.log for testing
 ```
-Run Webpack
+
+## Run Webpack
 ```
 npm run build
 ```
@@ -19,5 +25,4 @@ The result should be a dist folder containing a main.js file with the `alert('I 
 ```
 Delete the dist folder after observing the output and before running webpack again.
 
-## Return to Main
-[Return to Main](https://github.com/michihodges/webpack-basics)
+## [Return to Main](https://github.com/michihodges/webpack-basics)
