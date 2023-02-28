@@ -2,7 +2,7 @@
 Express.js (Express) is one of the most popular Node frameworks for building web applications quickly and easily. The CORS and Body-Parser packages will also need to be installed for Express to work properly. CORS allows for communication across the web, which is important when getting and posting data from an API (Application Programming Interface). Body-Parser acts as Middleware, allowing data to be parsed and is passed through routes onto the server. As previously explained in the 01-node branch, it is important and critical which package versions are installed. The following steps demonstrate how easily an Express server can be set up locally with the compatible packages and correct file structure:
 
 ## Initial Setup
-Before installing any packages, it is important to understand the necessary file structure, where the project assets need to be and where Node based things need to be. Everything that is Node or server based should be in the project root which is the projects main folder. Everything that is project based should be in the project folder which in this case is named `website`. The file structure can be found above this README.md file at the top of this GitHub repository.
+Before installing any packages, it is important to understand the necessary file structure, where the project assets need to be and where Node based things need to be. Everything that is Node based should be in the project root which is the projects main folder. Everything that is project based should be in the project folder which in this case is named `website`. The file structure can be found above this README.md file at the top of this GitHub repository.
 
 ## Install Packages
 Install Express, CORS and Body-Parser:
