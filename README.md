@@ -40,4 +40,5 @@ npm run build
 ```
 Don't worry - there will be an error, because the config file is still empty ;)
 
-## [Return to Main](https://github.com/michihodges/webpack-basics)
+## [Main Branch](https://github.com/michihodges/webpack-basics)
+## [Next Branch](https://github.com/michihodges/webpack-basics/tree/04-webpack-entry)
