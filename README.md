@@ -59,5 +59,5 @@ Should any vulnerabilities need fixing run:
 npm audit fix
 ```
 
-[Return to Main Branch](https://github.com/michihodges/webpack-basics)
-[Next Branch](https://github.com/michihodges/webpack-basics/tree/02-express)
+## [Return to Main Branch](https://github.com/michihodges/webpack-basics)
+## [Next Branch](https://github.com/michihodges/webpack-basics/tree/02-express)
