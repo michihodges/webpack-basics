@@ -28,4 +28,5 @@ The result should be a `dist` folder containing a `main.js` file with the `alert
 ```
 Delete the `dist` folder after observing the output and before running webpack again.
 
-## [Return to Main](https://github.com/michihodges/webpack-basics)
+## [Main Branch](https://github.com/michihodges/webpack-basics)
+## [Next Bracch](https://github.com/michihodges/webpack-basics/tree/05-webpack-loaders)
