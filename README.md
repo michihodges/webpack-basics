@@ -54,4 +54,4 @@ Delete the rest:
 Note they will be added again with Sass later.
 
 ## [Main Branch](https://github.com/michihodges/webpack-basics)
-## [Next Bracch](https://github.com/michihodges/webpack-basics/tree/05-webpack-loaders)
+## [Next Branch](https://github.com/michihodges/webpack-basics/tree/05-webpack-loaders)
