@@ -1,5 +1,5 @@
 # Webpack Entry
-Before Webpack can map app assets including dependencies it needs somewhere to start. The default entry point is `./src/index.js`, however, due to Express already being set up with a slightly different file structure it will need to be `./src/client/index.js` and the file `index.js` will also need to be created there. The entry point will need to be configured in the config file.
+Before Webpack can map app assets including dependencies it needs somewhere to start. The default entry point is `./src/index.js`, however, due to Express already being set up with a slightly different file structure it will need to be `./src/client/index.js` and the file `index.js` will also need to be created there. The entry point will be configured in the config file. To test the entry point, an alert can be added to the `index.js` file and is implemented when Webpack is run.
 
 ## File Structure
 Create `index.js` inside the `./src/client` folder path:
