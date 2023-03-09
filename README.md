@@ -41,27 +41,8 @@ Open `index.html` in the browser and you should see the alert modal pop up with 
 
 Make sure to delete the `dist` folder before running webpack again.
 
-## Output
+## Review
 What has been achieved so far is that Webpack has built a `dist` folder containing a `main.js` file with the `alert('I exist!')` that was initially written in the `index.js` file inside the `src` folder showing at the end of a lot of Webpack code. What exactly does that mean? `dist` stands for distribution and pops up in the project root next to the project folder `src` which stands for source. `src` contains everything that you create and edit. `dist` publishes everything from `src` as an optimised format for the web. Any changes that need to be made MUST be made in the `src` folder NOT the `dist` folder, because if they are made in the `dist` folder and Webpack is run again they will be overwritten by the unaltered content in the `src` folder. Having Webpack build a `dist` folder with a `main.js` file that incorporates code from the `index.js` file inside the `src` folder is nice, but it's not being used anywhere and is currently doing very little compared to the potential of what Webpack is capable of. For `main.js` to be doing something it needs to be linked to the `index.html` file which can be found in the folder path `./src/client/views/index.html`. Inside the `<head>` element of the `index.html` file there are multiple links connected to various css and js files in the `src` folder. Normally, this is fine, however, with Webpack the `dist` folder needs to be linked and the other links can be deleted.
-
-### index.html
-Add `main.js` inside the `<head>` element where the other links are:
-```html
-<script type="text/javascript" src="../../../dist/main.js"></script>
-```
-Note `main.js` can be hard coded for now, however, keep in mind it will be reviewed and dynamically added later.
-
-Delete the rest:
-```html
-<script type="text/javascript" src="/js/nameChecker.js"></script>
-<script type="text/javascript" src="/js/formHandler.js"></script>
-<link rel="stylesheet" href="/styles/resets.css">
-<link rel="stylesheet" href="/styles/base.css">
-<link rel="stylesheet" href="/styles/header.css">
-<link rel="stylesheet" href="/styles/form.css">
-<link rel="stylesheet" href="/styles/footer.css">
-```
-Note they will be added again with Sass later.
 
 ## [Main Branch](https://github.com/michihodges/webpack-basics)
 ## [Next Branch](https://github.com/michihodges/webpack-basics/tree/05-webpack-loaders)
