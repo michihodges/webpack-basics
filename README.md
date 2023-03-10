@@ -39,10 +39,10 @@ The output should be a `dist` folder containing a `main.js` file with the `alert
 ```
 Open `index.html` in the browser and you should see the alert modal pop up with the text 'I exist!'.
 
-Make sure to delete the `dist` folder before running webpack again.
+Make sure to delete the `dist` folder before running webpack again. Simply running Webpack again will not overwrite it. This will be touched upon again at a later date.
 
 ## Review
-What has been achieved so far is that Webpack has built a `dist` folder containing a `main.js` file with the `alert('I exist!')` that was initially written in the `index.js` file inside the `src` folder showing at the end of a lot of Webpack code. What exactly does that mean? `dist` stands for distribution and pops up in the project root next to the project folder `src` which stands for source. This is the folder that would be distributed or uploaded to the hosting provider that hosts the web app. `src` contains everything that you create and edit. `dist` publishes everything from `src` as an optimised format for the web. Any changes that need to be made MUST be made in the `src` folder NOT the `dist` folder, because if they are made in the `dist` folder and Webpack is run again they will be overwritten by the unaltered content in the `src` folder.
+What has been achieved so far is that Webpack has built a `dist` folder containing a `main.js` file with the `alert('I exist!')` that was initially written in the `index.js` file inside the `src` folder showing at the end of a lot of Webpack code. What exactly does that mean? `dist` stands for distribution and pops up in the project root next to the project folder `src` which stands for source. The `dist` folder would be distributed or uploaded to the hosting provider that hosts the web app. `src` contains everything that you create and edit. `dist` publishes everything from `src` as an optimised format for the web. Any changes that need to be made MUST be made in the `src` folder NOT the `dist` folder, because if they are made in the `dist` folder and Webpack is run again they will be overwritten by the unaltered content in the `src` folder.
 
 ## [Main Branch](https://github.com/michihodges/webpack-basics)
 ## [Next Branch](https://github.com/michihodges/webpack-basics/tree/05-webpack-loaders)
