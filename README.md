@@ -10,7 +10,7 @@ module.exports = {
 ```
 
 ## Configure Intended Output
-Link `./dist/main.js` in `index.html` inside and at the bottom of the <body>:
+Link `./dist/main.js` in `index.html` inside and at the bottom of the `<body>` tag:
 ```html
 <body>
     <!--All other code is here-->
