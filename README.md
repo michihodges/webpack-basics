@@ -9,7 +9,7 @@ Install Webpack, Webpack-cli and Webpack-dev-server:
 ```
 npm i --legacy-peer-deps webpack@4.35.3
 npm i --legacy-peer-deps webpack-cli@3.3.5
-npm i --legacy-peer-deps --save-dev webpack-dev-server@3.11.2
+npm i --legacy-peer-deps -D webpack-dev-server@3.11.2
 ```
 
 ## Configuration
