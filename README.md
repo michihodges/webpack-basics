@@ -27,7 +27,7 @@ module: {
     }
 ```
 
-## Incororate Other JavaScript Files
+## Incorporate Other JavaScript Files
 ## Export
 Export formHandler.js:
 ```js
@@ -49,7 +49,7 @@ console.log(checkForName);
 alert('I exist!') // Keep the alert for now
 ```
 
-The result should be ...
+The result should be `console.log(checkForName);` showing up in the `main.js` file just before `alert('I exist!')`.
 
 ## [Main Branch](https://github.com/michihodges/webpack-basics)
 ## [Next Branch](https://github.com/michihodges/webpack-basics/tree/06-webpack-plugins)
