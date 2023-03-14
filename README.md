@@ -10,12 +10,13 @@ module.exports = {
 ```
 
 ## Configure Intended Output
-Link `./dist/main.js` in `index.html` inside and at the bottom of the `<body>` tag:
+Link `./dist/main.js` in `index.html` inside the `<head>` tag:
 ```html
-<body>
-    <!--All other code is here-->
+<head>
+    <meta charset="utf-8">
+    <title>Test</title>
     <script type="text/javascript" src="../../../dist/main.js"></script>
-</body>
+</head>
 ```
 
 ## Test Entry Point
