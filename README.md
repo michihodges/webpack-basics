@@ -17,14 +17,14 @@ Add the following code:
 Add the following code under `entry` in `webpack.config.js`:
 ```js
 module: {
-        rules: [
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                loader: "babel-loader"
-            }
-        ]
-    }
+    rules: [
+        {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            loader: "babel-loader"
+        }
+    ]
+}
 ```
 
 ## Incorporate Other JavaScript Files
