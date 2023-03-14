@@ -7,8 +7,8 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                loader: "babel-loader"
+                loader: "babel-loader" // The last line does not need a comma
             }
         ]
-    }
+    } // The last line does not need a comma
 }
