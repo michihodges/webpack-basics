@@ -24,7 +24,6 @@ plugins: [
 
 ## Run Webpack
 Run the build command in the CLI:
-and observe the new dist folder output
 ```
 npm run build
 ```
