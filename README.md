@@ -8,7 +8,7 @@ npm install -D --legacy-peer-deps html-webpack-plugin@3.2.0
 ```
 
 ## Configure HTML Webpack Plugin:
-`require()` the plugin with the other dependencies required at the top of the webpack config:
+`require()` the plugin with the other dependencies required at the top of the config file:
 ```
 const htmlWebpackPlugin = require("html-webpack-plugin")
 ```
