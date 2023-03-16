@@ -27,21 +27,16 @@ Run the build command in the CLI:
 ```
 npm run build
 ```
-The result should be a `dist` folder with an `index.html` and `main.js` file inside of it. The index.html file should have the main.js file dynamically added at the end.
+The result should be a `dist` folder with an `index.html` and `main.js` file inside of it. The `index.html` file should have the `main.js` file dynamically referenced inside the `<body>` element at the end:
 
 ## Update Server
-Update your server file. Change the home route to use the index file from dist:
+Update the home route to use the `index.html` file from the `dist` folder:
 ```js
 app.get('/', function (req, res) {
     res.sendFile('dist/index.html')
 })
 ```
-Update your server file to look for asset files in the dist instead of client.</br>
-Change:
-```js
-app.use(express.static('src/client'))
-```
-To:
+Update the asset folder from `src` to `dist`:
 ```js
 app.use(express.static('dist'))
 ```
