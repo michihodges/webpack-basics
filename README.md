@@ -48,6 +48,5 @@ app.use(express.static('dist'))
 
 ## Run Server
 
-## Return to Main
-[Main Branch](https://github.com/michihodges/webpack-basics)
-[Next Branch](https://github.com/michihodges/webpack-basics/tree/07-webpack-mode)
+## [Main Branch](https://github.com/michihodges/webpack-basics)
+## [Next Branch](https://github.com/michihodges/webpack-basics/tree/07-webpack-mode)
