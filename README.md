@@ -9,7 +9,7 @@ npm install -D --legacy-peer-deps html-webpack-plugin@3.2.0
 
 ## Configure HTML Webpack Plugin:
 `require()` the plugin with the other dependencies required at the top of the config file:
-```
+```js
 const htmlWebpackPlugin = require("html-webpack-plugin")
 ```
 Add a `plugins` list under the `modules` object to the webpack config and instantiate the plugin:
@@ -27,21 +27,28 @@ Run the build command in the CLI:
 ```
 npm run build
 ```
-The result should be a `dist` folder with an `index.html` and `main.js` file inside of it. The `index.html` file should have the `main.js` file dynamically referenced inside the `<body>` element at the end:
+The result should be a `dist` folder with an `index.html` and `main.js` file inside of it. The `index.html` file should have the `main.js` file dynamically referenced inside the and at the end of the `<body>` element:
 
 ## Update Server
-Update the home route to use the `index.html` file from the `dist` folder:
+Although Webpack is running the way it should, the server isn't and needs reconfiguring. Update the home route to use the `index.html` file from the `dist` instead of the `src` folder:
 ```js
 app.get('/', function (req, res) {
     res.sendFile('dist/index.html')
 })
 ```
-Update the asset folder from `src` to `dist`:
+Then update the asset folder from `src` to `dist`:
 ```js
 app.use(express.static('dist'))
 ```
 
 ## Run Server
+```
+node src/server/index.js
+```
+The console should print:
+```
+Example app listening on port 8080!
+```
 
 ## [Main Branch](https://github.com/michihodges/webpack-basics)
 ## [Next Branch](https://github.com/michihodges/webpack-basics/tree/07-webpack-mode)
