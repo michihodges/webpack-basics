@@ -23,7 +23,6 @@ plugins: [
 ```
 
 ## Run Webpack
-Run the build command in the CLI:
 ```
 npm run build
 ```
