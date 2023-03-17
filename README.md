@@ -45,6 +45,7 @@ const server = app.listen(port, ()=>{console.log(`server running on localhost ${
 ```
 
 ## Run Server
+Rev up the local Express server:
 ```
 node server.js
 ```
