@@ -23,6 +23,7 @@ plugins: [
 ```
 
 ## Run Webpack
+Run the build command:
 ```
 npm run build
 ```
@@ -41,6 +42,7 @@ app.use(express.static('dist'))
 ```
 
 ## Run Server
+Rev up the local Express server:
 ```
 node src/server/index.js
 ```
