@@ -34,7 +34,7 @@ module.exports = {
 }
 ```
 ## Run Webpack
-Run the build command in the CLI: 
+Run the build command: 
 ```
 npm run build
 ```
