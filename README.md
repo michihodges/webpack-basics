@@ -51,5 +51,8 @@ The console should print:
 Example app listening on port 8080!
 ```
 
+## Review
+Congratulations! Webpack is up and running. Essentially, everything to configure Webpack has been covered; an entry point has been established, JavaScript files are bundled into one browser compatible file, `main.js` is dynamically referenced and an `index.html` file is generated in the distribution folder to which the server is pointing to. Nevertheless, when the `build` command is run, the command line is warning that no mode has been set and that it will fallback to production mode as its default. The warning also states that production or development modes can be set as defaults as well as the option of not setting a mode at all. This will be covered in the next branch.
+
 ## [Main Branch](https://github.com/michihodges/webpack-basics)
 ## [Next Branch](https://github.com/michihodges/webpack-basics/tree/07-webpack-mode)
