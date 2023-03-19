@@ -1,15 +1,4 @@
 # Webpack Mode
-Review
-What has been achieved so far?
-What is the problem?
-How can things be optimised?
-Keyword; optimisation (optimise workflow [development] and optimise output [production])
-
-Congratulations! Webpack is up and running. Essentially, everything to configure Webpack has been covered; an entry point has been established, JavaScript files are bundled into one browser compatible file, `main.js` is dynamically referenced and an `index.html` file is generated in the distribution folder to which the server is pointing to. Nevertheless, when the `build` command is run, the command line is warning that no mode has been set and that it will fallback to production mode as its default. The warning also states that production or development modes can be set as defaults as well as the option of not setting a mode at all. This will be covered in the next branch.
-
-
-Configuring modes is actually quite useful, because they optimise specific development environments, such as, development and production. It makes sense to separate different steps of a project in order to optimise their build, because production code needs to be as optimised as much as possible, where as development code needs to be as clear and understandable as possible. Both are very different environments that require different loaders and plugins. Modes caters for this.
-
 Intro
 What is mode?
 What is the difference between developer mode and production mode?
