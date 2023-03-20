@@ -1,11 +1,11 @@
 # Webpack Mode
-Intro
-What is mode?
-What is the difference between developer mode and production mode?
-How are different modes setup?
-Which tools are setup and used for the different modes?
+Modes are different states or environments in which developers build their web apps. They can be setup in the command line, but in this case, they will be embedded and configured in separate config files. The modes that will be setup are, development and production. They are quite self-explanatory; one is intended to optimise the development phase of the project and the other the production phase. Development mode is intended to make the developer's environment as convenient as possible whereas production mode is meant to be server efficient. 
 
-Modes are specific environments that can be configured to assist with development, testing, debugging, production and various other workflows or .  
+There are more modes that can be created, such as, a test mode or a debug mode, however, setting development and production modes will suffice to grasp the concept.
+
+A nice example of a tool intended for development rather than production purposes is the source map tool. Source map generates an extra file called `main.js.map` 
+
+Follow the steps below to configure development and production modes:
 
 ### webpack.config.js
 Create a copy of the `webpack.config.js` file and rename it `webpack.prod.js`.</br>
@@ -34,5 +34,6 @@ npm run build-dev
 The result should be that development mode should additionally have a `main.js.map` file and code in the `main.js` file should be 'prettified', that is, formatted so that someone can read it more easily.</br>
 Delete `dist` folder before after observing output and before running modes again.
 
-## Return to Main
-[Return to Main](https://github.com/michihodges/webpack-basics)
+## Review
+
+## [Main Branch](https://github.com/michihodges/webpack-basics)
