@@ -1,7 +1,7 @@
 {
-  "name": "webpack-content",
+  "name": "webpack-basics",
   "version": "1.0.0",
-  "description": "Walkthrough and template for an Express and Webpack based app.",
+  "description": "A walkthrough for setting up Webpack for an Express based app.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
