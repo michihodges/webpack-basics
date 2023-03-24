@@ -28,7 +28,7 @@ module: {
 ```
 
 ## Incorporate Other JavaScript Files
-## Export
+### Export
 Export formHandler.js:
 ```js
 export function handleSubmit(event) {...} // Simply add 'export' to the beginning of the function
@@ -38,7 +38,7 @@ Export nameChecker.js:
 export function checkForName(inputText) {...} // Add 'export' to the beginning of the function
 ```
 
-## Import
+### Import
 Import formHandler.js and nameChecker.js then console.log one of the functions:
 ```js
 import { checkForName } from './js/nameChecker'
@@ -49,6 +49,7 @@ console.log(checkForName);
 alert('I exist!') // Keep the alert for now
 ```
 
+## Review
 The result should be `console.log(checkForName);` showing up in the `main.js` file just before `alert('I exist!')`.
 
 ## [Main Branch](https://github.com/michihodges/webpack-basics)
