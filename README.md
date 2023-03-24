@@ -34,7 +34,6 @@ module.exports = {
 ```
 
 ## Run Webpack
-Run the build command: 
 ```
 npm run build
 ```
