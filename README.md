@@ -2,6 +2,7 @@
 Webpack first needs an entry point for it to compile and build assets. An entry point is where Webpack starts from, which is normally `./src/index.js`, however, due to Express already being set up with a slightly different file structure, `./src/client/index.js` will need to be referenced and created. When Webpack is run with the `build` command, the output (result) should be a `./dist` folder in the project root, that is, on the same level as the project folder, Node and congig files witha `main.js` file inside of it. To test that Webpack is doing what it should be doing, which essentially is, compile code from one file into another, an `alert('I exist!')` can be added inside `index.js` before having it run and build. Below is a set of instructions on how to setup and test the entry point as well as test the output when Webpack is run:
 
 ## Configure Entry Point
+### webpack.config.js
 Add entry point to `webpack.config.js`:
 ```js
 module.exports = {
@@ -9,8 +10,8 @@ module.exports = {
 }
 ```
 
-## Configure Intended Output
-Link `./dist/main.js` in `index.html` inside the `<head>` tag:
+### src/client/views/index.html
+Link `./dist/main.js` in `./src/client/views/index.html` inside the `<head>` tag:
 ```html
 <head>
     <meta charset="utf-8">
@@ -29,8 +30,7 @@ Add test content:
 alert('I exist!')
 ```
 
-## Output
-Run Webpack:
+## Run Webpack
 ```
 npm run build
 ```
