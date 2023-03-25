@@ -16,5 +16,4 @@ Alternatively, you can go really low tech by simply editing the build script and
 rm -rf dist && webpack-dev-server  --config webpack.dev.js --open
 ```
 
-## Return to Main
-[Return to Main](https://github.com/michihodges/webpack-basics)
+## [Main Branch](https://github.com/michihodges/webpack-basics)
