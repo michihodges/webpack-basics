@@ -13,7 +13,7 @@ Replace the `build-dev` script with:
 "build-dev": "webpack-dev-server --config webpack-dev-server --open"
 ```
 
-## EITHER
+## EITHER:
 ## Clean Webpack Plugin
 ### Install Clean Webpack Plugin
 ```
@@ -23,7 +23,7 @@ npm i -D --legacy-peer-deps clean-webpack-plugin@3.0.0
 ### Configure Webpack Plugin
 Require 
 
-## OR
+## OR:
 ## Blanket Deletion
 Alternatively, you can go really low tech by simply editing the build script and blanket delete the `dist` folder every time:
 ```js
