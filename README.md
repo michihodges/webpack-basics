@@ -13,6 +13,7 @@ Replace the `build-dev` script with:
 "build-dev": "webpack-dev-server --config webpack-dev-server --open"
 ```
 
+## EITHER
 ## Clean Webpack Plugin
 Notice that we have deleted the `dist` folder manually each time after running the `npm run build` or `npm run build-dev` command. With the Clean Webpack Plugin, it efficiently only rebuilds the files where changes have been made.
 Install Clean Webpack Plugin:
@@ -20,10 +21,15 @@ Install Clean Webpack Plugin:
 npm i -D --legacy-peer-deps clean-webpack-plugin@3.0.0
 ```
 
+## Or
 ## Blanket Deletion
 Alternatively, you can go really low tech by simply editing the build script and blanket delete the `dist` folder every time:
 ```js
 rm -rf dist && webpack-dev-server  --config webpack.dev.js --open
 ```
+
+## Run Webpack
+
+## Review
 
 ## [Main Branch](https://github.com/michihodges/webpack-basics)
