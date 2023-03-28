@@ -21,7 +21,11 @@ npm i -D --legacy-peer-deps clean-webpack-plugin@3.0.0
 ```
 
 ### Configure Webpack Plugin
-Require 
+Require the package at the top of `webpack.dev.js`:
+```js
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+```
+Add 
 
 ## OR:
 ## Blanket Deletion
