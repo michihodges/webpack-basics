@@ -34,7 +34,7 @@ Alternatively, go really low tech by simply editing the build script and blanket
 "build-dev": "rm -rf dist && webpack-dev-server  --config webpack.dev.js --open"
 ```
 
-## Run Webpack Dev Server
+## Run Development Mode
 
 ## Make Changes
 
