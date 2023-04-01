@@ -50,7 +50,7 @@ alert('I also exist!')
 ## Exit Development Mode
 In the Command Line enter the shortcut keys:
 ```
-control + c
+control/ctrl + C
 ```
 
 ## Review
