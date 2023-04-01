@@ -23,7 +23,7 @@ npm i -D --legacy-peer-deps clean-webpack-plugin@3.0.0
 ### Configure Webpack Plugin
 Require the package at the top of `webpack.dev.js`:
 ```js
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 ```
 Add 
 
@@ -35,8 +35,21 @@ Alternatively, go really low tech by simply editing the build script and blanket
 ```
 
 ## Run Development Mode
+```
+npm run build-dev
+```
 
 ## Make Changes
+Make visible changes that test whether this new setup works. For instance, go to `./src/client/index.js` and add another `alert()`:
+```js
+alert('I also exist!')
+```
+
+## Exit Development Mode
+To exit development mode press:
+```
+control + C
+```
 
 ## Review
 
