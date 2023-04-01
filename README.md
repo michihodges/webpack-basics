@@ -34,13 +34,9 @@ Alternatively, go really low tech by simply editing the build script and blanket
 "build-dev": "rm -rf dist && webpack-dev-server  --config webpack.dev.js --open"
 ```
 
-## Run Webpack
+## Run Webpack Dev Server
 
-## Run Server
-
-## Check Browser
-
-## Test Setup
+## Make Changes
 
 ## Review
 
