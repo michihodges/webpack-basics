@@ -15,7 +15,6 @@ Replace the `build-dev` script with:
 ```
 
 ## EITHER:
-## Clean Webpack Plugin
 ### Install Clean Webpack Plugin
 In the Command Line enter:
 ```
@@ -30,7 +29,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 Add 
 
 ## OR:
-## Blanket Folder Deletion
+### Configure Blanket Folder Deletion
 Alternatively, go really low tech by simply editing the build script and blanket delete the `dist` folder every time. Replace the `build-dev` script with:
 ```js
 "build-dev": "rm -rf dist && webpack-dev-server  --config webpack.dev.js --open"
