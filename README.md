@@ -42,7 +42,7 @@ Don't forget to add the comma after the `new HtmlWebpackPlugin` object.
 
 ## OR:
 ### Configure package.json
-To blanket delete the `dist` folder, simply edit the `build-dev` by adding `rm -rf dist &&`:
+To blanket delete the `dist` folder simply edit the `build-dev` by adding `rm -rf dist &&`:
 ```js
 "build-dev": "rm -rf dist && webpack-dev-server  --config webpack.dev.js --open"
 ```
