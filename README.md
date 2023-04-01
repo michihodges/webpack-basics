@@ -48,12 +48,12 @@ alert('I also exist!')
 ```
 
 ## Exit Development Mode
-In the Command Line enter the shortcut keys:
+To stop the Webpack Dev Server from running enter the following shortcut keys in the Command Line:
 ```
 control/ctrl + C
 ```
 
 ## Review
-What should now happen when running development mode is that the browser is immediatley opened using the localhost URL and any changes that are made refresh instantly after saving. Note that a `dist` folder is no longer created in the text editor environment, but is present and 'pretified' when opening the developer tools in the browser. Initially, I found this quite irritating, because I was expecting one to be built and wanted to test things further in the text editor. Then, after considering where changes to the website were meant to be seen, it occured to me that they made more sense in the browser rather than in the text editor, because the browser is where changes should be tested and not in the text editor. The result when running production mode should remain the same, as nothing new has been installed and configured for that mode.
+What should now happen when running development mode in both cases is that the browser is immediatley opened using the localhost URL. Any changes that are saved in the text editor instantly reloads and refreshes the browser. Note that a `dist` folder is no longer created in the text editor environment, but is present and 'pretified' when opening the developer tools in the browser. Initially, I found this quite irritating, because I was expecting one to be built and wanted to test things further in the text editor. Then, after considering where changes to the website were meant to be seen, it occured to me that they made more sense in the browser rather than in the text editor, because the browser is where changes should be tested and not in the text editor. The result when running production mode should remain the same, as nothing new has been installed and configured for that mode.
 
 ## [Main Branch](https://github.com/michihodges/webpack-basics)
