@@ -3,6 +3,7 @@ Congratulaions! Webpack has been set up successfully! Now to make things a littl
 
 ## Webpack Dev Server
 ### Install Webpack Dev Server
+In the Command Line enter:
 ```
 npm i -D --legacy-peer-deps webpack-dev-server@3.11.2
 ```
@@ -35,20 +36,21 @@ Alternatively, go really low tech by simply editing the build script and blanket
 ```
 
 ## Run Development Mode
+In the Command Line enter:
 ```
 npm run build-dev
 ```
 
 ## Make Changes
-Make visible changes that test whether this new setup works. For instance, go to `./src/client/index.js` and add another `alert()`:
+For instance, open `./src/client/index.js` and add another `alert()`:
 ```js
 alert('I also exist!')
 ```
 
 ## Exit Development Mode
-To exit development mode press:
+In the Command Line enter:
 ```
-control + C
+control + c
 ```
 
 ## Review
