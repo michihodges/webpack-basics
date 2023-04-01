@@ -29,14 +29,14 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 Implement it after the `new HtmlWebpackPlugin` object:
 ```js
 new CleanWebpackPlugin({
-            // Simulate the removal of files
-            dry: true,
-            // Write Logs to Console
-            verbose: true,
-            // Automatically remove all unused webpack assets on rebuild
-            cleanStaleWebpackAssets: true,
-            protectWebpackAssets: false
-        })
+    // Simulate the removal of files
+    dry: true,
+    // Write Logs to Console
+    verbose: true,
+    // Automatically remove all unused webpack assets on rebuild
+    cleanStaleWebpackAssets: true,
+    protectWebpackAssets: false
+})
 ```
 Don't forget to add the comma after the `new HtmlWebpackPlugin` object.
 
@@ -60,7 +60,7 @@ alert('I also exist!')
 ```
 
 ## Exit Development Mode
-To stop the Webpack Dev Server from running enter the following shortcut keys in the Command Line:
+To stop the Webpack Dev Server from running enter the `control/ctrl + C` shortcut keys in the Command Line:
 ```
 control/ctrl + C
 ```
