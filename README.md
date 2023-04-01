@@ -17,6 +17,7 @@ Replace the `build-dev` script with:
 ## EITHER:
 ## Clean Webpack Plugin
 ### Install Clean Webpack Plugin
+In the Command Line enter:
 ```
 npm i -D --legacy-peer-deps clean-webpack-plugin@3.0.0
 ```
