@@ -26,11 +26,23 @@ Require the package at the top of `webpack.dev.js`:
 ```js
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 ```
-Add 
+Implement it after the `new HtmlWebpackPlugin` object:
+```js
+new CleanWebpackPlugin({
+            // Simulate the removal of files
+            dry: true,
+            // Write Logs to Console
+            verbose: true,
+            // Automatically remove all unused webpack assets on rebuild
+            cleanStaleWebpackAssets: true,
+            protectWebpackAssets: false
+        })
+```
+Don't forget to add the comma after the `new HtmlWebpackPlugin` object.
 
 ## OR:
-### Configure Blanket Folder Deletion
-Alternatively, go really low tech by simply editing the build script and blanket delete the `dist` folder every time. Replace the `build-dev` script with:
+### Configure package.json
+To blanket delete the `dist` folder, simply edit the `build-dev` by adding `rm -rf dist &&`:
 ```js
 "build-dev": "rm -rf dist && webpack-dev-server  --config webpack.dev.js --open"
 ```

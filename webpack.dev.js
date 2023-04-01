@@ -19,7 +19,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: "./src/client/views/index.html",
             filename: "./index.html"
-        }),
+        }), // Make sure to add a comma before the next section
         new CleanWebpackPlugin({
             // Simulate the removal of files
             dry: true,
@@ -27,7 +27,7 @@ module.exports = {
             verbose: true,
             // Automatically remove all unused webpack assets on rebuild
             cleanStaleWebpackAssets: true,
-            protectWebpackAssets: false
-        })
-    ]
+            protectWebpackAssets: false // The last line does not need a comma
+        }) // The last section does not need a comma
+    ] 
 }
