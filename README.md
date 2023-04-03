@@ -1,5 +1,8 @@
 # Webpack Basics
-A walkthrough for setting up Webpack for an Express based app.</br></br>
+A walkthrough for setting up Webpack for an Express based web app.
+
+## Introduction
+The aim of this GitHub repository is to provide a working template to kick start a Webpack based project as well a act as a concise and easy to follow walkthrough for setting up Webpack from scratch.
 
 Checkout [01-node](https://github.com/michihodges/webpack-basics/tree/01-node) if you need to install and set up Node.js.</br>
 Checkout [02-express](https://github.com/michihodges/webpack-basics/tree/02-express) if you need to install and set up Express.</br>
