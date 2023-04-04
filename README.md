@@ -7,7 +7,7 @@ The aim of this GitHub repository is to provide a concise working template to ki
 ## Walkthrough
 [01-node](https://github.com/michihodges/webpack-basics/tree/01-node) explains why Node.js version 14 is so important for this Webpack setup, how to install v14 or if necessary how to download Node Version Manager and configure v14 as the default version.
 
-[02-express](https://github.com/michihodges/webpack-basics/tree/02-express) introduces the Node Package Manager which comes pre-installed with Node.js with which the packages Express.js, Body-Parser and CORS will be installed to easily set up a local server.
+[02-express](https://github.com/michihodges/webpack-basics/tree/02-express) introduces the Node Package Manager which comes pre-installed with Node.js with which the packages Express.js, Body-Parser and CORS are installed to easily set up a local server.
 
 
 Checkout [02-express](https://github.com/michihodges/webpack-basics/tree/02-express) if you need to install and set up Express.</br>
