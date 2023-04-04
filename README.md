@@ -2,7 +2,12 @@
 A walkthrough for setting up Webpack for an Express based web app.
 
 ## Introduction
-The aim of this GitHub repository is to provide a concise working template to kick start a Webpack based web app as well as a thorough and easy to follow walkthrough for setting up Webpack from scratch. These aims can be split into two categories; Template and Walkthrough. Template essentially skips the explanation of each step and purely focuses on getting a project started, whereas Walkthrough categorises and describes each step in detail. With Template, everything required is on this page and on the main branch. With Walkthrough, each branch will need to be navigated to by either the links below or the branch navigation bar at the top which is currently on main. 
+The aim of this GitHub repository is to provide a concise working template to kick start a Webpack based web app as well as a thorough and easy to follow walkthrough for setting up Webpack from scratch. These aims are split into two categories; Template and Walkthrough. Template essentially skips the explanation of each step and purely focuses on getting a project started, whereas Walkthrough categorises and describes each step in detail. Template has everything required on this page (the main branch) to get started. Walkthrough has links that can be navigated to in the branch navigation at the top and within the separate section introductions at the bottom of this document.
+
+## Template
+
+
+## Walkthrough
 
 Checkout [01-node](https://github.com/michihodges/webpack-basics/tree/01-node) if you need to install and set up Node.js.</br>
 Checkout [02-express](https://github.com/michihodges/webpack-basics/tree/02-express) if you need to install and set up Express.</br>
