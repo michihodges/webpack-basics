@@ -10,6 +10,13 @@
     "webpack": "^4.35.3",
     "webpack-cli": "^3.3.5"
   },
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.13.8",
+    "@babel/preset-env": "^7.21.4",
+    "babel-loader": "^8.3.0",
+    "html-webpack-plugin": "^3.2.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-prod": "webpack --config webpack.prod.js",
@@ -24,8 +31,5 @@
   "bugs": {
     "url": "https://github.com/michihodges/webpack-content/issues"
   },
-  "homepage": "https://github.com/michihodges/webpack-content#readme",
-  "devDependencies": {
-    "@babel/plugin-transform-modules-commonjs": "^7.13.8"
-  }
+  "homepage": "https://github.com/michihodges/webpack-content#readme"
 }
