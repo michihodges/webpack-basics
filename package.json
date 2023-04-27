@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/michihodges/webpack-content/issues"
   },
-  "homepage": "https://github.com/michihodges/webpack-content#readme"
+  "homepage": "https://github.com/michihodges/webpack-content#readme",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.13.8"
+  }
 }
