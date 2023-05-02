@@ -3,7 +3,10 @@ So far Webpack has been installed and configured with an entry point resulting w
 
 ## Install Babel
 ```
-npm i -D --legacy-peer-deps @babel/core@^7.13.15 @babel/preset-env@^7.13.15 babel-loader@^8.2.2
+npm i -D --legacy-peer-deps @babel/core@7.13.15
+npm i -D --legacy-peer-deps @babel/plugin-transform-modules-commonjs@7.13.8
+npm i -D --legacy-peer-deps @babel/preset-env@7.13.15
+npm i -D --legacy-peer-deps babel-loader@8.2.2
 ```
 ## Configure Babel
 Create a `.babelrc` file in the project root:
